@@ -1,6 +1,6 @@
 import streamlit as st
 #import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
-import warnings
+#import warnings
 import joblib
 import numpy as np
 
@@ -16,7 +16,7 @@ def calculate():
     st.text("Region:"+str(region))
     #st.text("Model Selected:"+str(model_selected))
        
-    warnings.filterwarnings('ignore')
+    #warnings.filterwarnings('ignore')
     #df = pd.read_csv("medical_costs.csv")
 
     #df['Sex'] = df['Sex'].astype('category').cat.codes
