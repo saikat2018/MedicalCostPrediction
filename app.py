@@ -1,9 +1,8 @@
 import streamlit as st
-import pandas as pd
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+#import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import warnings
 import joblib
+import numpy as np
 
 # Model gets called here
 def calculate():
@@ -24,9 +23,9 @@ def calculate():
     #df['Smoker'] = df['Smoker'].astype('category').cat.codes
     #df['Region'] = df['Region'].astype('category').cat.codes
 
-    from sklearn.metrics import accuracy_score
-    import xgboost as xgb
-    from sklearn.model_selection import train_test_split
+    #from sklearn.metrics import accuracy_score
+    #import xgboost as xgb
+    #from sklearn.model_selection import train_test_split
 
     # Send Medical Cost to Data Frame
 
@@ -83,8 +82,8 @@ def calculate():
     # with which we want to save it
 
 
-    from sklearn.ensemble import BaggingRegressor
-    from sklearn.tree import DecisionTreeRegressor
+    #from sklearn.ensemble import BaggingRegressor
+    #from sklearn.tree import DecisionTreeRegressor
 
     # Use DecisionTreeRegressor as the base estimator
     #base_regressor = DecisionTreeRegressor(max_depth=8)
@@ -102,7 +101,7 @@ def calculate():
     #print("RMSE : % f" %(rmse_bagging))
 
     # Evaluate the model (MAE)
-    from sklearn.metrics import mean_absolute_error
+    #from sklearn.metrics import mean_absolute_error
     # Calculate MAE
     #mae_bagging = mean_absolute_error(y_test, y_pred_bagging)
     #print(f"Mean Absolute Error: {mae_bagging}")
