@@ -4,6 +4,10 @@ import streamlit as st
 import joblib
 import numpy as np
 
+# Header and Description
+st.title("Annual Medical Cost Prediction")
+st.markdown("This application uses XGBoost and Bagging models to predict the annual medical cost of a person based on the Region he/she lives in, Age, Gender, Weight, Height, Number of children and Smoking status. Fill these and wait for few seconds to get the predicted cost given by the two models.")
+
 # Model gets called here
 def calculate():
     st.text("Age:"+str(age))
@@ -203,5 +207,8 @@ with st.form(key = "Form 1"):
 
     if submit:
         calculate()
-    
+
+# Signature at the bottom
+st.markdown("---")
+st.markdown("<p style='text-align: center; color: gray;'>Built by Saikat</p>", unsafe_allow_html=True)
 
